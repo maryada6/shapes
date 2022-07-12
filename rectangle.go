@@ -10,5 +10,5 @@ func NewRectangle(height, width float64) Rectangle {
 }
 
 func Perimeter(height float64, width float64) float64 {
-	return 18.0
+	return width + width + height + height
 }
