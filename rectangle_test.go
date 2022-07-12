@@ -6,9 +6,15 @@ import (
 )
 
 func TestNewRectangle(t *testing.T) {
-	t.Run("should be able to initialize with height and width", func(t *testing.T) {
+	t.Run("should be able to initialize rectangle with height and width", func(t *testing.T) {
 		assert.NotPanics(t, func() {
 			NewRectangle(4, 5)
+		})
+	})
+
+	t.Run("width and height should be positive", func(t *testing.T) {
+		assert.Panics(t, func() {
+			NewRectangle(-1, 0)
 		})
 	})
 

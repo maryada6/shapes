@@ -12,12 +12,16 @@ A library to calculate perimeter of rectangle with sides of lengths a and b.
 
 ## Build instructions
 
-`$ go build `
+To build this project use the following command:
+
+    $ go build
 
 
 ## Test instructions
 
-`$ go test`
+To run the test use the following command:
+
+    $ go test
 
 ## Library usage
 

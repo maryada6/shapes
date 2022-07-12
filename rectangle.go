@@ -6,6 +6,9 @@ type Rectangle struct {
 }
 
 func NewRectangle(height, width float64) Rectangle {
+	if height <= 0 || width <= 0 {
+		panic("width and height should be positive")
+	}
 	return Rectangle{height, width}
 }
 
