@@ -6,6 +6,8 @@ A library to calculate perimeter of rectangle with sides of lengths a and b.
 
 ## Development environment setup
 
+After checking out the repo, import `github.com/stretchr/testify` to use `assert`.
+
 ### Prerequisite
 
 - Go (1.18.2)

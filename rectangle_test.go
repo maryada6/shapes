@@ -25,10 +25,16 @@ func TestNewRectangle(t *testing.T) {
 
 func TestPerimeter(t *testing.T) {
 	t.Run("should return 18.0 for rectangle with height and width as 4 and 5", func(t *testing.T) {
-		assert.Equal(t, Perimeter(4, 5), 18.0)
+		r := Rectangle{4, 5}
+		assert.Equal(t, 18.0, r.Perimeter())
+	})
+	t.Run("should return 18.0 for rectangle with height and width as 5 and 4", func(t *testing.T) {
+		r := Rectangle{5, 4}
+		assert.Equal(t, 18.0, r.Perimeter())
 	})
 
 	t.Run("should return 20.0 for rectangle with height and width as 5 and 5", func(t *testing.T) {
-		assert.Equal(t, Perimeter(5, 5), 20.0)
+		r := Rectangle{5, 5}
+		assert.Equal(t, 20.0, r.Perimeter())
 	})
 }
