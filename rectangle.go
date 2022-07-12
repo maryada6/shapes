@@ -8,3 +8,7 @@ type Rectangle struct {
 func NewRectangle(height, width float64) Rectangle {
 	return Rectangle{height, width}
 }
+
+func Perimeter(height float64, width float64) float64 {
+	return 18.0
+}

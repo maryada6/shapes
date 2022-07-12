@@ -16,3 +16,9 @@ func TestNewRectangle(t *testing.T) {
 		assert.IsType(t, Rectangle{}, NewRectangle(4, 5))
 	})
 }
+
+func TestPerimeter(t *testing.T) {
+	t.Run("should return 18.0 for rectangle with height and width as 4 and 5", func(t *testing.T) {
+		assert.Equal(t, Perimeter(4, 5), 18.0)
+	})
+}
