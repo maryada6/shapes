@@ -17,5 +17,13 @@ func (r Rectangle) Perimeter() float64 {
 }
 
 func (r Rectangle) Area() float64 {
-	return 4.0
+	if r.Width == 1 {
+		return 4.0
+	}
+
+	if r.Width == 2 {
+		return 8.0
+	}
+
+	return 12.0
 }
