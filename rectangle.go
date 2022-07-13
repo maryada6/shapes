@@ -1,8 +1,8 @@
 package shape
 
 type Rectangle struct {
-	Height float64
-	Width  float64
+	height float64
+	width  float64
 }
 
 func NewRectangle(height, width float64) Rectangle {
@@ -12,18 +12,10 @@ func NewRectangle(height, width float64) Rectangle {
 	return Rectangle{height, width}
 }
 
-func (r Rectangle) Perimeter() float64 {
-	return 2 * (r.Width + r.Height)
+func (rect Rectangle) Perimeter() float64 {
+	return 2 * (rect.width + rect.height)
 }
 
-func (r Rectangle) Area() float64 {
-	if r.Width == 1 {
-		return 4.0
-	}
-
-	if r.Width == 2 {
-		return 8.0
-	}
-
-	return 12.0
+func (rect Rectangle) Area() float64 {
+	return rect.width * rect.height
 }

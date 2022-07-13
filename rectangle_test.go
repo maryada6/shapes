@@ -54,4 +54,34 @@ func TestArea(t *testing.T) {
 		r := Rectangle{4, 3}
 		assert.Equal(t, 12.0, r.Area())
 	})
+
+	t.Run("should return 4.0 for rectangle with height and width as 1 and 4", func(t *testing.T) {
+		r := Rectangle{1, 4}
+		assert.Equal(t, 4.0, r.Area())
+	})
+
+	t.Run("should return 8.0 for rectangle with height and width as 2 and 4", func(t *testing.T) {
+		r := Rectangle{2, 4}
+		assert.Equal(t, 8.0, r.Area())
+	})
+
+	t.Run("should return 12.0 for rectangle with height and width as 3 and 4", func(t *testing.T) {
+		r := Rectangle{3, 4}
+		assert.Equal(t, 12.0, r.Area())
+	})
+
+	t.Run("should return 16.0 for rectangle with height and width as 4 and 4", func(t *testing.T) {
+		r := Rectangle{4, 4}
+		assert.Equal(t, 16.0, r.Area())
+	})
+
+	t.Run("should return 10.0 for rectangle with height and width as 5 and 2", func(t *testing.T) {
+		r := Rectangle{5, 2}
+		assert.Equal(t, 10.0, r.Area())
+	})
+
+	t.Run("should return 10.0 for rectangle with height and width as 2 and 5", func(t *testing.T) {
+		r := Rectangle{2, 5}
+		assert.Equal(t, 10.0, r.Area())
+	})
 }

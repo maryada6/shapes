@@ -2,7 +2,7 @@
 
 ## Problem description
 
-A library to calculate perimeter of rectangle with sides of lengths a and b.  
+A library to calculate perimeter and area of rectangle with sides of lengths a and b.  
 
 ## Development environment setup
 
