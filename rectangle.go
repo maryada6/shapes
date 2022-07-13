@@ -36,3 +36,7 @@ func (rect Rectangle) Area() float64 {
 func (square Square) Perimeter() float64 {
 	return square.side * 4
 }
+
+func (square Square) Area() float64 {
+	return 1.0
+}

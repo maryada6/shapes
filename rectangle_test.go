@@ -112,4 +112,8 @@ func TestArea(t *testing.T) {
 		r := Rectangle{2, 5}
 		assert.Equal(t, 10.0, r.Area())
 	})
+
+	t.Run("should return 1.0 for square with side 1", func(t *testing.T) {
+		assert.Equal(t, 1.0, Square{1}.Area())
+	})
 }
