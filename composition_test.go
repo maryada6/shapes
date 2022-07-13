@@ -13,7 +13,7 @@ func TestNewCompSquare(t *testing.T) {
 	})
 
 	t.Run("new square should return square", func(t *testing.T) {
-		assert.IsType(t, compSquare{}, NewCompSquare(5))
+		assert.IsType(t, compSquare{}, NewCompSquare(4))
 	})
 }
 

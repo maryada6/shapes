@@ -5,7 +5,11 @@ type compSquare struct {
 }
 
 func NewCompSquare(side float64) compSquare {
-	return compSquare{NewRectangle(side, side)}
+	rectangle := NewRectangle(side, side)
+	if rectangle.height != rectangle.width {
+		panic("square should have equal height and width")
+	}
+	return compSquare{rectangle}
 }
 
 func (square compSquare) Area() float64 {
