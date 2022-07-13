@@ -85,3 +85,11 @@ func TestArea(t *testing.T) {
 		assert.Equal(t, 10.0, r.Area())
 	})
 }
+
+func TestNewSquare(t *testing.T) {
+	t.Run("should be able to initialize square with side", func(t *testing.T) {
+		assert.NotPanics(t, func() {
+			NewSquare(5)
+		})
+	})
+}
