@@ -27,4 +27,26 @@ To run the test use the following command:
 
 ## Library usage
 
-TODO: Library usage to be updated.
+To create a new rectangle
+
+    NewRectangle{height, width}
+
+To create a new square
+
+    NewSquare{side}
+
+To find the perimeter of a rectangle
+
+    NewRectangle{height, width}.Perimeter()
+
+To find the area of a rectangle
+
+    NewRectangle{height, width}.Area()
+
+To find the perimeter of a square
+
+    NewSquare{side}.Perimeter()
+
+To find the area of a square
+
+    NewSquare{side}.Area()
