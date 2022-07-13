@@ -38,11 +38,5 @@ func (square Square) Perimeter() float64 {
 }
 
 func (square Square) Area() float64 {
-	if square.side == 1 {
-		return 1.0
-	}
-	if square.side == 2 {
-		return 4.0
-	}
-	return 9.0
+	return square.side * square.side
 }
