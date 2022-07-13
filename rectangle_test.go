@@ -38,3 +38,10 @@ func TestPerimeter(t *testing.T) {
 		assert.Equal(t, 20.0, r.Perimeter())
 	})
 }
+
+func TestArea(t *testing.T) {
+	t.Run("should return 4.0 for rectangle with height and width as 4 and 1", func(t *testing.T) {
+		r := Rectangle{4, 1}
+		assert.Equal(t, 4.0, r.Area())
+	})
+}
