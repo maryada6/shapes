@@ -52,6 +52,15 @@ func TestPerimeter(t *testing.T) {
 
 	t.Run("should return 4.0 for square with side 1", func(t *testing.T) {
 		assert.Equal(t, 4.0, Square{1}.Perimeter())
+	})
+
+	t.Run("should return 8.0 for square with side 2", func(t *testing.T) {
+		assert.Equal(t, 8.0, Square{2}.Perimeter())
+	})
+
+	t.Run("should return 12.0 for square with side 3", func(t *testing.T) {
+		assert.Equal(t, 12.0, Square{3}.Perimeter())
+	})
 }
 
 func TestArea(t *testing.T) {
