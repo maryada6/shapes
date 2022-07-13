@@ -32,3 +32,7 @@ func (rect Rectangle) Perimeter() float64 {
 func (rect Rectangle) Area() float64 {
 	return rect.width * rect.height
 }
+
+func (square Square) Perimeter() float64 {
+	return 4.0
+}
