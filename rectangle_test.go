@@ -116,4 +116,12 @@ func TestArea(t *testing.T) {
 	t.Run("should return 1.0 for square with side 1", func(t *testing.T) {
 		assert.Equal(t, 1.0, Square{1}.Area())
 	})
+
+	t.Run("should return 4.0 for square with side 2", func(t *testing.T) {
+		assert.Equal(t, 4.0, Square{2}.Area())
+	})
+
+	t.Run("should return 9.0 for square with side 3", func(t *testing.T) {
+		assert.Equal(t, 9.0, Square{3}.Area())
+	})
 }
