@@ -1,21 +1,21 @@
 package shape
 
-type compSquare struct {
+type Square struct {
 	rect Rectangle
 }
 
-func NewCompSquare(side float64) compSquare {
+func NewSquare(side float64) Square {
 	rectangle := NewRectangle(side, side)
 	if rectangle.height != rectangle.width {
 		panic("square should have equal height and width")
 	}
-	return compSquare{rectangle}
+	return Square{rectangle}
 }
 
-func (square compSquare) Area() float64 {
+func (square Square) Area() float64 {
 	return square.rect.Area()
 }
 
-func (square compSquare) Perimeter() float64 {
+func (square Square) Perimeter() float64 {
 	return square.rect.Perimeter()
 }
