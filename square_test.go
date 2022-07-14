@@ -15,6 +15,13 @@ func TestNewSquare(t *testing.T) {
 	t.Run("new square should return square", func(t *testing.T) {
 		assert.IsType(t, Square{}, NewSquare(4))
 	})
+
+	t.Run("side should not be zero or negative", func(t *testing.T) {
+		assert.Panics(t, func() {
+			NewSquare(0)
+			NewSquare(-1)
+		})
+	})
 }
 
 func TestSquarePerimeter(t *testing.T) {
